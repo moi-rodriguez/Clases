@@ -25,3 +25,33 @@ function calcular() {
         console.log('ERROR: Ingrese dos números diferentes y mayores a cero.')
     }
 }
+
+function rangoEtario() {
+    edad = document.getElementById('edad').value
+    edad = parseInt(edad)
+
+    if (typeof edad === 'number' && !isNaN(edad)) {
+        
+        if (edad > 0) {
+            
+            if (edad < 18) {
+                console.log('Persona es menor de edad!')
+            }
+            else if (edad < 65) {
+                console.log('Persona es adulto!')
+            }
+            else if (edad < 85) {
+                console.log('Persona es adulto mayor!')
+            }
+            else {
+                console.log('Persona es de años dorados!')
+            }
+
+        } else {
+            console.log('Ingrese edad valida')
+        }
+
+    } else {
+        console.log('ERROR: El valor ingresado no es un número')
+    }
+}

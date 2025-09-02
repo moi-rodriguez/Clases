@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- 2. Realizar operaciones con dos números. -->
     <h1>Calculadora</h1>
 
-    <h2>Ingrese cuantas minitas se jotearia el moi</h2>
+    <h2>Ingrese dos números diferentes y mayores a cero</h2>
 
     <input
         id="num1"
@@ -25,8 +26,27 @@
         value=""
     >
 
-    <!-- onClick es un "evento" del botón -->
     <button onclick="calcular()">Calcular</button>
+
+    <p>(Los resultados aparecerán en consola)</p>
+
+    <hr>
+
+    <!-- 3. obtener el rango etario de la persona -->
+        <h1>Rango etario</h1>
+
+        <h2>Ingrese la edad de la persona:</h2>
+
+        <input
+        id="edad"
+        type="string"
+        placeholder="Edad"
+        value=""
+        >
+
+        <button onclick="rangoEtario()">Calcular</button>
+        <hr>
+
 
     <script src="script.js"></script>
 </body>
