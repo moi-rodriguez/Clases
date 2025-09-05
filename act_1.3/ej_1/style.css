@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(230, 217, 251);
+    font-family:'Courier New', Courier, monospace;
+}
+
+.titulo {
+    font-family: Arial;
+    font-size: 30px;
+    text-align: center;
+}
