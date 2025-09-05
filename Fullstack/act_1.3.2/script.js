@@ -55,3 +55,33 @@ function rangoEtario() {
         console.log('ERROR: El valor ingresado no es un número')
     }
 }
+
+function f4_1() {
+    const lista = [1]
+    
+    n = document.getElementById('n').value
+    n = parseInt(n)
+
+    for (let i = 1; i < n; i++) {
+        lista.push(lista[i - 1] * 2)
+    }
+
+    console.log(lista)
+}
+
+function f4_2() {
+
+}
+
+function f4_3() {
+
+}
+
+function f4_4() {
+
+}
+
+function f4_5() {
+
+}
+
