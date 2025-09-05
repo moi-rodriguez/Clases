@@ -1,0 +1,29 @@
+#nombre {
+    border-radius: 10px;
+}
+
+#correo {
+    border-radius: 10px;
+}
+
+#mensaje {
+    border-radius: 10px;
+}
+
+#nombre:hover {
+    border-radius: 10px;
+    border-color: blue;
+}
+
+#correo:hover {
+    border-radius: 10px;
+    border-color: blue;
+}
+
+#mensaje:hover {
+    border-radius: 10px;
+    border-color: blue;
+}
+
+
+
