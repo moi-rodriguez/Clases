@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo">Lista de tareas dinámica</h1>
+
+    <ol>
+        <li>
+            Terminar guia fullstack
+            <button onclick="eliminar()">Eliminar</button>
+        </li> 
+        <li>Estudiar sql
+            <button onclick="eliminar()">Eliminar</button>
+        </li>
+        <li>Juntarme con el Maxi para hacer lo de estadistica
+            <button onclick="eliminar()">Eliminar</button>
+        </li>
+    </ol>
+
+    <label for="mensaje">Nueva tarea:</label>
+    <br>
+    <textarea id="mensaje" name="mensaje"></textarea>
+    <br><br>
+
+    <button onclick="validar()">Agregar tarea</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

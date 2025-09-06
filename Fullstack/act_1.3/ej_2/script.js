@@ -7,6 +7,6 @@ function validar() {
         alert('Deben completarse todos los campos!')
     } 
     else {
-        alert('todo correcto, puede continuar')
+        alert('Todo correcto, puede continuar!')
     }
 }
