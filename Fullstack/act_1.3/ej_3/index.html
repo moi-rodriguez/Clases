@@ -7,9 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="titulo">Lista de tareas dinámica</h1>
+    <h1>Lista de tareas dinámica</h1>
 
-    <ol>
+    <input type="text" id="nuevaTarea" placeholder="Escribe una tarea">
+    <button onclick="agregarTarea()">Agregar tarea</button>
+
+    <ul id="listaTareas">
+
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- 
+<ol>
         <li>
             Terminar guia fullstack
             <button onclick="eliminar()">Eliminar</button>
@@ -28,7 +40,4 @@
     <br><br>
 
     <button onclick="validar()">Agregar tarea</button>
-
-    <script src="script.js"></script>
-</body>
-</html>
+-->
