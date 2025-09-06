@@ -25,15 +25,3 @@ li {
 li.completada {
     text-decoration: line-through;
 }
-
-button.delete {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-button.delete:hover {
-    background-color: darkred;
-}
