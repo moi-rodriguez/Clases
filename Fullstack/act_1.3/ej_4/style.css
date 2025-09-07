@@ -1,35 +1,58 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.filters{
+.filters {
     text-align: center;
-    margin-top: 20px 0px;
+    margin-top: 20px;
 }
 
-.filter-btn{
+.filter-btn {
     padding: 8px 16px;
     margin: 0 5px;
     border: none;
     cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.filter-btn:hover {
+    background-color: #45a049;
 }
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-.photo{
+.photo {
     width: 300px;
-    margin: 10px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-.photo img{
+.image-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.image-container img {
     width: 100%;
     height: auto;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect applied to the image container */
+.image-container:hover img {
+    transform: scale(1.05);  /* Zoom on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
 }
