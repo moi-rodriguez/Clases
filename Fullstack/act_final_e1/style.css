@@ -1,0 +1,134 @@
+.Contenedor {
+    display: grid;
+    border: black;
+}
+
+#HeaderH1>h1 {
+    text-align-last: center;
+    font-family: 'Lucida Sans Regular';
+    color: blue;
+
+}
+
+#HeaderH1>a {
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    font-size: 20px;
+
+}
+
+#HeaderH1>#BtnLogin {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    /* Esto es la posicion */
+
+    font-family: 'Lucida Sans Regular';
+    background-color: blue;
+    color: white;
+    border: none;
+    /* Para que se vea mas pulcro y no tan feo el diseño del boton */
+    padding: 10px 30px;
+    /* Largo y ancho */
+    cursor: pointer;
+    border-radius: 100px;
+    font-size: 16px;
+}
+
+#HeaderH1>#BtnLogin:hover {
+    background-color: darkblue;
+    color: white;
+
+}
+
+#BtnLogin:active {
+    background-color: navy;
+    color: white;
+}
+
+form {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+
+
+}
+
+footer {
+    background-color: black;
+    font-family: 'Lucida Sans Regular';
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+
+#Box-Formulario {
+    border: 2px solid black;
+    /* Que hace el borde del formulario */
+    padding: 30px;
+    /* Que hace el padding del formulario */
+    align-items: center;
+
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* Hace que los elementos esten en columna */
+    background-color: lightgray;
+    border-radius: 10px;
+    width: 50%;
+    /* Ancho del formulario */
+
+
+}
+
+#Checkbox>#h2 {
+    position: absolute;
+    align-items: top, center;
+}
+
+#Checkbox {
+    border: 2px solid black;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+}
+
+#Checkbox>#Genero {
+    font-size: 14px;
+
+}
+
+#Btnsubmit {
+    background-color: blue;
+    color: white;
+    border: none;
+    /* Para que se vea mas pulcro y no tan feo el diseño del boton */
+    padding: 10px 30px;
+    /* Largo y ancho */
+    cursor: pointer;
+    border-radius: 100px;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+#FormH1 {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-family: 'Lucida Sans Regular';
+    color: blue;
+    font-size: 40px;
+    margin-bottom: 20px;
+
+
+
+}
