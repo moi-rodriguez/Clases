@@ -5,8 +5,8 @@
 
 #HeaderH1>h1 {
     text-align-last: center;
-    font-family: 'Lucida Sans Regular';
     color: blue;
+    font-size: 40px;
 
 }
 
@@ -24,7 +24,6 @@
     top: 10px;
     /* Esto es la posicion */
 
-    font-family: 'Lucida Sans Regular';
     background-color: blue;
     color: white;
     border: none;
@@ -59,12 +58,12 @@ form {
 
 footer {
     background-color: black;
-    font-family: 'Lucida Sans Regular';
     color: white;
     text-align: center;
     font-size: 12px;
     padding: 10px;
     bottom: 0;
+    margin: 0;
     width: 100%;
     position: fixed;
 }
@@ -124,11 +123,11 @@ footer {
     display: flex;
     justify-content: left;
     align-items: left;
-    font-family: 'Lucida Sans Regular';
     color: blue;
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: -10px;
+}
 
-
-
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
