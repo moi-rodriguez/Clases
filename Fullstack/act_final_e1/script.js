@@ -1,67 +1,56 @@
+localStorage = window.localStorage;
+
+const regexNombre = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/; // solo letras y espacios
+const regexContraseña = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%]).{10,}$/;
 function Validar() {
-    valor = true;
-    let nombre = document.getElementById('nombre');
-    let contraseña = document.getElementById('contraseña');
-    let email = document.getElementById('email');
-    let confirmar_contraseña = document.getElementById('confirmar_contraseña');
+    let valido = true;
+    document.querySelectorAll(".error").forEach(span => span.textContent = "");
 
-    // Validar vacíos
-    if (nombre.value == "" ||
-        contraseña.value == "" ||
-        confirmar_contraseña.value == "" ||
-        email.value == "") {
-        console.log('Todos los campos deben tener datos!');
-        return false;
-    } else {
-        alert('Todos los campos tienen datos, Continue');
-    }
+    const nombre = document.getElementById('nombre');
+    const email = document.getElementById('email');
+    const contraseña = document.getElementById('contraseña');
+    const confirmar = document.getElementById('confirmar_contraseña');
 
-    // Validar nombre
-    if (nombre.value.length > 100) {
-        console.log('El nombre no puede tener más de 100 caracteres');
-        return false;
+    // --- Validar NOMBRE ---
+    if (!nombre.value) {
+        document.getElementById("error-nombre").textContent = "El nombre no puede estar vacío";
+        valido = false;
+    } else if (!regexNombre.test(nombre.value)) {
+        document.getElementById("error-nombre").textContent = "Solo letras y espacios";
+        valido = false;
+    } else if (nombre.value.length > 100) {
+        document.getElementById("error-nombre").textContent = "Máximo 100 caracteres";
+        valido = false;
     }
 
-    // Validar email
-    if (!email.value.endsWith('@duoc.cl')) {
-        console.log('El correo debe terminar en @duoc.cl');
-        return false;
-    }
-    if (email.value.length > 60) {
-        console.log('El correo no puede tener más de 60 caracteres');
-        return false;
-    }
-
-    // Validar contraseña
-    if (contraseña.value.length < 10) {
-        console.log('La contraseña debe tener al menos 10 caracteres');
-        return false;
-    }
-    if (!/[A-Z]/.test(contraseña.value)) {
-        console.log('La contraseña debe tener al menos una letra mayúscula');
-        return false;
-    }
-    if (!/[a-z]/.test(contraseña.value)) {
-        console.log('La contraseña debe tener al menos una letra minúscula');
-        return false;
-    }
-    if (!/[0-9]/.test(contraseña.value)) {
-        console.log('La contraseña debe tener al menos un número');
-        return false;
-    }
-    if (!/[@#$%]/.test(contraseña.value)) {
-        console.log('La contraseña debe tener un caracter especial (@#$%)');
-        return false;
-    } else {
-        alert('Contraseña ingresada correctamente');
+    // --- Validar EMAIL ---
+    if (!email.value) {
+        document.getElementById("error-email").textContent = "El correo es obligatorio";
+        valido = false;
+    } else if (!email.value.endsWith("@duocuc.cl")) {
+        document.getElementById("error-email").textContent = "Debe terminar en @duocuc.cl";
+        valido = false;
     }
 
-    // Validar confirmación
-    if (confirmar_contraseña != contraseña) {
-        alert('Las contraseñas no coinciden');
-        return false;
 
+    // --- Validar CONTRASEÑA ---
+
+    if (!regexContraseña.test(contraseña.value)) {
+        document.getElementById("error-contraseña").textContent =
+            "Debe tener mínimo 10 caracteres, 1 mayúscula, 1 minúscula, 1 número y 1 especial (@#$%)";
+        valido = false;
     }
 
-    return valor;
+    // --- Validar CONFIRMACIÓN ---
+    if (confirmar.value != contraseña.value) {
+        document.getElementById("error-confirmar").textContent = "Las contraseñas no coinciden";
+        valido = false;
+    }
+
+
+
+    if (valido) {
+        alert("Formulario enviado correctamente");
+    }
+    return valido;
 }
