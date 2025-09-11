@@ -10,54 +10,73 @@
 
 <body>
     <section class="Contenedor">
-        <Header id="HeaderH1">
-            <H1>ZONALIBROS</H1>
+        <header id="HeaderH1">
+            <h1>ZONALIBROS</h1>
             <button id="BtnLogin">INICIAR SESIÓN</button>
             <a href="">HOME</a>
-        </Header>
+        </header>
 
         <section id="Box-Formulario">
             <h1 id="FormH1">Registro de usuario</h1>
-            <form action="" id="form" class="form" align="center">
-                <P>Nombre y apellido</P>
+
+
+            <form id="form" class="form" align="center" onsubmit="return Validar()">
+                <p>Nombre y apellido</p>
                 <input id="nombre" type="text" placeholder="Ingrese nombre...">
+
+
                 <p>Correo</p>
-                <input type="email" name="@duocuc.cl" id="" placeholder="Ingrese correo...">
+                <input type="email" id="email" placeholder="Ingrese correo...">
+
+
                 <p>Contraseña</p>
                 <input id="contraseña" type="password" placeholder="Ingrese contraseña...">
-                <p>Confirmar Contraseña</p>
-                <input type="password" placeholder="Confirme contraseña...">
-                <P>Teléfono (opcional)</P>
-                <input type="tel" placeholder="Ingrese su numero...">
-                <br><br>
-                <h2>Tipo de Género</h2>
 
+
+                <p>Confirmar Contraseña</p>
+                <input id="confirmar_contraseña" type="password" placeholder="Confirme contraseña...">
+
+
+                <p>Teléfono (opcional)</p>
+                <input type="tel" id="telefono" placeholder="Ingrese su número...">
+                <span id="error-telefono" class="error"></span><br><br>
+
+                <h2>Tipo de Género</h2>
                 <section id="Checkbox">
-                    <input type="checkbox" name="Ficcion" id="Genero">
-                    <label for="Genero">Ficción</label>
-                    <input type="checkbox" name="Misterio" id="Genero">
-                    <label for="Genero">Misterio</label>
-                    <input type="checkbox" name="Fantasia" id="Genero">
-                    <label for="Genero">Fantasía</label>
-                    <input type="checkbox" name="CF" id="Genero">
-                    <label for="Genero">Ciencia Ficción</label>
-                    <input type="checkbox" name="Romance" id="Genero">
-                    <label for="Genero">Romance</label>
-                    <input type="checkbox" name="Terror" id="Genero">
-                    <label for="Genero">Terror</label>
-                    <input type="checkbox" name="Historico" id="Genero">
-                    <label for="Genero">Histórico</label>
-                    <input type="checkbox" name="Aventura" id="Genero">
-                    <label for="Genero">Aventura</label>
-                    <input type="checkbox" name="Biografia" id="Genero">
-                    <label for="Genero">Biografía</label>
+                    <input type="checkbox" name="Ficcion" id="Genero1">
+                    <label for="Genero1">Ficción</label>
+
+                    <input type="checkbox" name="Misterio" id="Genero2">
+                    <label for="Genero2">Misterio</label>
+
+                    <input type="checkbox" name="Fantasia" id="Genero3">
+                    <label for="Genero3">Fantasía</label>
+
+                    <input type="checkbox" name="CF" id="Genero4">
+                    <label for="Genero4">Ciencia Ficción</label>
+
+                    <input type="checkbox" name="Romance" id="Genero5">
+                    <label for="Genero5">Romance</label>
+
+                    <input type="checkbox" name="Terror" id="Genero6">
+                    <label for="Genero6">Terror</label>
+
+                    <input type="checkbox" name="Historico" id="Genero7">
+                    <label for="Genero7">Histórico</label>
+
+                    <input type="checkbox" name="Aventura" id="Genero8">
+                    <label for="Genero8">Aventura</label>
+
+                    <input type="checkbox" name="Biografia" id="Genero9">
+                    <label for="Genero9">Biografía</label>
                 </section>
+
+                <br>
                 <button id="Btnsubmit" type="submit">REGISTRAR</button>
             </form>
-
-
         </section>
     </section>
+
     <footer id="foot">Tienda ZonaLibros ©</footer>
     <script src="script.js"></script>
 </body>
