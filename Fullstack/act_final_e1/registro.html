@@ -21,25 +21,25 @@
 
 
             <form id="form" class="form" align="center" onsubmit="return Validar()">
-                <p>Nombre y apellido</p>
-                <input id="nombre" type="text" placeholder="Ingrese nombre...">
+                <label for="nombre">Nombre y apellido</label>
+                <br><input id="nombre" type="text" placeholder="">
+                <br><span id="error-nombre" class="error"></span><br>
 
+                <label for="email">Email</label>
+                <br><input type="email" id="email" placeholder="">
+                <br><span id="error-email" class="error"></span><br>
 
-                <p>Correo</p>
-                <input type="email" id="email" placeholder="Ingrese correo...">
+                <label for="contraseña">Contraseña</label>
+                <br><input id="contraseña" type="password" placeholder="">
+                <br><span id="error-contraseña" class="error"></span><br>
 
+                <label for="contraseña">Confirmar Contraseña</label>
+                <br><input id="confirmar_contraseña" type="password" placeholder="">
+                <br><span id="error-confirmar_contraseña" class="error"></span><br>
 
-                <p>Contraseña</p>
-                <input id="contraseña" type="password" placeholder="Ingrese contraseña...">
-
-
-                <p>Confirmar Contraseña</p>
-                <input id="confirmar_contraseña" type="password" placeholder="Confirme contraseña...">
-
-
-                <p>Teléfono (opcional)</p>
-                <input type="tel" id="telefono" placeholder="Ingrese su número...">
-                <span id="error-telefono" class="error"></span><br><br>
+                <label for="telefono">Teléfono</label>
+                <br><input type="tel" id="telefono" placeholder="">
+                <br><span id="error-telefono" class="error"></span><br>
 
                 <h2>Tipo de Género</h2>
                 <section id="Checkbox">

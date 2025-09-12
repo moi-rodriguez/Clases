@@ -18,7 +18,8 @@
 
 }
 
-#HeaderH1>#BtnLogin, #HeaderH1>#BtnRegis {
+#HeaderH1>#BtnLogin,
+#HeaderH1>#BtnRegis {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -35,13 +36,15 @@
     font-size: 16px;
 }
 
-#HeaderH1>#BtnLogin:hover, #HeaderH1>#BtnRegis:hover {
+#HeaderH1>#BtnLogin:hover,
+#HeaderH1>#BtnRegis:hover {
     background-color: darkblue;
     color: white;
 
 }
 
-#BtnLogin:active, #BtnRegis:active {
+#BtnLogin:active,
+#BtnRegis:active {
     background-color: navy;
     color: white;
 }
