@@ -30,7 +30,6 @@ function render(items) {
             <p>Categoría: ${prod.category}</p>
             <button data-id="${prod.id}">Agregar</button>
         `;
-        
 
         grid.appendChild(article);
     });
@@ -54,7 +53,6 @@ botonesFiltro.forEach(btn => {
             render(filtrados); // sino filtra por categoria y vuelve a renderizar
         }
     });
-
 });
 
 // contador
@@ -84,13 +82,13 @@ form.addEventListener("submit", (e) => {
     const correo = document.getElementById("correo").value.trim();
     const mensaje = document.getElementById("mensaje").value.trim();
 
-    // Validamos campos vacíos
+    // validar que los campos no esten vacios
     if (!nombre || !correo || !mensaje) {
         errors.textContent = "Todos los campos son obligatorios.";
         return;
     }
 
-    // Validamos formato básico de email (simple)
+    // validar formato basico de correo
     if (!correo.includes("@") || !correo.includes(".")) {
         errors.textContent = "Ingrese un correo válido.";
         return;

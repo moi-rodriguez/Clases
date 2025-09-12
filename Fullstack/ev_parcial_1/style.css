@@ -130,7 +130,7 @@ footer {
 @media (min-width: 900px) {
     #grid {
         grid-template-columns: 1fr 1fr 1fr;
-        /*cuando la pantalla mide más de 900px (escritorio)*/
+        /*cuando la pantalla mide mas de 900px (escritorio)*/
         /* el grid es de 3 columnas */
     }
 }
