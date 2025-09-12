@@ -1,0 +1,136 @@
+/* Estilos base */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; /*saca margenes default del navegador */
+    padding: 0;
+    background-color: rgb(232, 232, 232);
+    color: black;
+    line-height: 1.5; /*texto mas legible*/
+}
+
+/* header y nav */
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /*se muestra horizontal*/
+    gap: 1rem; /*espacio entre los enlaces */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline; /*al pasar el mouse se subraya */
+}
+
+/* secciones */
+main {
+    padding: 1rem; /*para que el contenido no quede pegado a los bordes */
+}
+
+section {
+    margin-bottom: 5rem; /*espacio entre secciones */
+}
+
+/* grid de productos */
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 columna por default (mobile-first) */
+    gap: 1rem;
+}
+
+#grid article {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 6px;
+    background: white;
+    text-align: center;
+    /*cada tarjeta de libro con borde, fondo blanco y esquinas redondeadas */
+}
+
+/* botones en productos */
+
+#filtros button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1 rem;
+    border: none;
+    background-color: #2980b9;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#filtros button:hover {
+    background-color: #68a3cb;
+}
+
+/* formulario */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 400px; /*evita que se estire demasiado*/
+    /*organiza elementos en columna */
+}
+
+input, textarea, form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+/* focus en inputs */
+input:focus, textarea:focus {
+    outline: 2px solid #2980b9;
+    /*al hacer clic en un campo se resalta el borde en azul */
+}
+
+/* mensajes de error */
+#errors {
+    color: red;
+    margin-top: 0.5rem;
+}
+
+/* footer */
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* media queries*/
+
+@media (min-width: 600px) {
+    #grid {
+        grid-template-columns: 1fr 1fr;
+        /*cuando la pantalla mide más de 600px (tablets)*/
+        /* el grid es de 2 columnas */
+    }
+}
+
+@media (min-width: 900px) {
+    #grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        /*cuando la pantalla mide más de 900px (escritorio)*/
+        /* el grid es de 3 columnas */
+    }
+}

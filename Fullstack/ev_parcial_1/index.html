@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZonaLibros</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>ZonaLibros</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="incio">
+            <h2>Bienvenido a ZonaLibros</h2>
+
+            <p>Explora nuestro gran catálogo de libros!</p>
+        </section>
+
+        <section id="productos">
+            <h2>Nuestros Libros</h2>
+
+            <div id="filtros">
+                <button data-category="all">Todos</button>
+                <button data-category="novela">Novelas</button>
+                <button data-category="infantil">Infantiles</button>
+                <!-- data-category le dice al js que hace cada boton -->
+            </div>
+
+            <!-- span: permite modificar caracteres desde el js -->
+            <p>Libros en el carrito: <span id="count">0</span></p>
+
+
+            <!-- aqui se mostraran los productos desde el js -->
+            <div id="grid"></div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+
+            <form id="contact-form" novalidate> <!-- novalidate para controlar los mensajes de error -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <!-- aqui se mostraran los mensajes de error -->
+            <p id="errors" aria-live="polite"></p>
+                <!-- aria-live="polite" es una opcion de accesibilidad para lectores de pantalla -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&reg; 2025 ZonaLibros - Tu libreria de confianza.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
